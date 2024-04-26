@@ -1,0 +1,32 @@
+logger:
+  is_active : true
+  is_binary : true
+  freq      : 20
+  trigger : 
+    distance : 0.5  # [m]
+    yaw      : 45.0   # [deg]
+  save_param:
+    # save_path: "rs_log/kiryu_20240418_02/"
+    save_path: "rs_log/ohta_20240426/"
+    img:
+      dir  : "image/"
+      flag : true
+    high_point_cloud:
+      dir  : "pandar_40/"
+      flag : true
+    mid_point_cloud:
+      dir  : "mid_pandar_40/"
+      flag : true
+    low_point_cloud:
+      dir  : "low_pandar_40/"
+      flag : true
+    # sonar:
+    #   dir  : "mercury_sonar/"
+    #   flag : true
+    robot_state:
+      dir  : "mercury_blue/"
+      flag : true
+    location:
+      dir  : "location/"
+      flag : true
+
